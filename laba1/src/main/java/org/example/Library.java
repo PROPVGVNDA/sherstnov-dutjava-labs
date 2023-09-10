@@ -38,12 +38,15 @@ public class Library
         return null;
     }
 
-    public void ListBooks()
+    public String ListBooks()
     {
-        if (books.isEmpty()) System.out.println("Library is empty");
-        else {
-          for (Book book : books) System.out.println(book.toString());
+        if (books.isEmpty()) return "Library is empty";
+        StringBuilder bookList = new StringBuilder("########\n");
+        for (Book book : books) {
+            bookList.append(book.toString()).append("\n");
         }
+        bookList.append("########");
+        return bookList.toString();
     }
 
     private ArrayList<Book> books;

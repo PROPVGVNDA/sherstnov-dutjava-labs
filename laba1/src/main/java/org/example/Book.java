@@ -3,6 +3,8 @@ package org.example;
 public class Book {
     public Book(String title, String author, String isbn, Integer publicationYear)
     {
+        // the earliest example of a dated book
+        if (publicationYear < 868) throw new IllegalArgumentException("Publication year cannot be earlier than 868 CE.");
         this.title = title;
         this.author = author;
         this.isbn = isbn;

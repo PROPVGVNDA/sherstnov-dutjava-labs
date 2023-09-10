@@ -10,12 +10,12 @@ public class Main {
         Book book4 = new Book("And Then There Were None", "Agatha Christie", "9780008123208", 	2015);
         Book book5 = new Book("Dream of the Red Chamber (紅樓夢)", "Cao Xueqin", " 9780385093798", 	1958);
         Library library = new Library();
-        library.ListBooks();
+        System.out.println(library.ListBooks());
         library.AddBook(book1);
         library.AddBook(book2);
         library.AddBook(book3);
-        library.ListBooks();
+        System.out.println(library.ListBooks());
         library.DeleteBookByIsbn(book2.getIsbn());
-        library.ListBooks();
+        System.out.println(library.ListBooks());
     }
 }
