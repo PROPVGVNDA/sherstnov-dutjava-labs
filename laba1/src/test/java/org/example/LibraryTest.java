@@ -1,59 +1,59 @@
 package org.example;
 
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 class LibraryTest {
     private Library library;
+    private Book book;
 
-    @org.junit.jupiter.api.BeforeEach
+    @BeforeEach
     void setUp() {
         // Initialize a new Library instance before each test
         library = new Library();
+        book = new Book("Test Book", "Test Author", "1234567890", 2023);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testAddBook() {
-        Book book = new Book("Test Book", "Test Author", "1234567890", 2023);
         library.AddBook(book);
         assertNotNull(library.FindBookByTitle("Test Book"));
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testDeleteBookByIsbn() {
-        Book book = new Book("Test Book", "Test Author", "1234567890", 2023);
         library.AddBook(book);
         assertTrue(library.DeleteBookByIsbn("1234567890"));
         assertNull(library.FindBookByTitle("Test Book"));
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testFindBookByTitle() {
-        Book book1 = new Book("Test Book", "Test Author", "1234567890", 2023);
-        library.AddBook(book1);
-        assertEquals(book1, library.FindBookByTitle("Test Book"));
+        library.AddBook(book);
+        assertEquals(book, library.FindBookByTitle("Test Book"));
         assertNull(library.FindBookByTitle("Non-existent Book"));
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testListBooksEmptyLibrary() {
         library.ListBooks();
         assertEquals("Library is empty", library.ListBooks());
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testListBooksNonEmptyLibrary() {
-        Book book1 = new Book("Test Book", "Test Author", "1234567890", 2023);
-        library.AddBook(book1);
+        library.AddBook(book);
         library.ListBooks();
         assertEquals("########\nTest Book by Test Author published in 2023. ISBN:1234567890\n########",  library.ListBooks());
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testDeleteNonExistentBook() {
         assertFalse(library.DeleteBookByIsbn("Non-existent ISBN"));
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testEmptyLibrary() {
         assertFalse(library.DeleteBookByIsbn("1234567890"));
         assertNull(library.FindBookByTitle("Non-existent Book"));
