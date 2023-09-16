@@ -8,11 +8,13 @@ public class Book extends Item {
     }
 
     public void setAuthor(String author) {
+        if (author.isEmpty()) throw new IllegalArgumentException("Author length cannot be 0");
         this.author = author;
     }
 
     public Book(String title, String author) {
         super(title);
+        if (author.isEmpty()) throw new IllegalArgumentException("Author length cannot be 0");
         this.author = author;
     }
 

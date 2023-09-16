@@ -7,6 +7,7 @@ public abstract class Item {
     protected boolean isBorrowed;
 
     public Item(String title) {
+        if (title.isEmpty()) throw new IllegalArgumentException("Title length cannot be 0");
         this.title = title;
         this.uniqueID = UUID.randomUUID().toString();
         this.isBorrowed = false;
