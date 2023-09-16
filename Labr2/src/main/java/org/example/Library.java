@@ -4,8 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Library implements IManageable {
-    private List<Item> items;
-    private List<Patron> patrons;
+    private ArrayList<Item> items;
+    private ArrayList<Patron> patrons;
+
+    public List<Item> getItems() {
+        return items;
+    }
+
+    public List<Patron> getPatrons() {
+        return patrons;
+    }
 
     public Library() {
         this.items = new ArrayList<>();
@@ -43,10 +51,16 @@ public class Library implements IManageable {
     }
 
     public void lendItem(Patron patron, Item item) {
+        if (!items.contains(item)) throw new RuntimeException("Attempt to borrow an item not present in the library");
+        if (!patrons.contains(patron)) throw new RuntimeException("Attempt to borrow an item from a non-registered patron");
+        if (item.isBorrowed) throw new RuntimeException("Attempt to borrow a borrowed item");
         patron.borrowItem(item);
     }
 
     public void returnItem(Patron patron, Item item) {
+        if (!items.contains(item)) throw new RuntimeException("Attempt to return an item not registered in the library");
+        if (!patrons.contains(patron)) throw new RuntimeException("Attempt to return an item from a non-registered patron");
+        if (!item.isBorrowed) throw new RuntimeException("Attempt to return a non-borrowed item");
         patron.returnItem(item);
     }
 }
