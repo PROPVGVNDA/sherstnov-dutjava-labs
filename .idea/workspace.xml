@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f218fcd-31d1-4f32-b4fc-24f095a08a7e" name="Changes" comment="" />
+    <list default="true" id="3f218fcd-31d1-4f32-b4fc-24f095a08a7e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/university/lab2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/university/lab3/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/university/lab4_1/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/university/lab1/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/university/lab2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/university/lab3/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/university/lab4_1/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,10 +30,19 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2Vexjwz6tYixl1gybCyhUymHxx8" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -30,22 +51,36 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "F:/sherstnov-dutjava-labs",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "F:/sos/sherstnov-dutjava-labs/src/test/java/org/example/university/lab4_1",
     "onboarding.tips.debug.path": "F:/sherstnov-dutjava-labs/src/main/java/org/example/Main.java"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Markdown"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\sherstnov-dutjava-labs\src\main\java\org\example\university\lab3" />
+      <recent name="F:\sos\sherstnov-dutjava-labs\src\test\java\org\example\university\lab4_1" />
+      <recent name="F:\sos\sherstnov-dutjava-labs\src\test\java\org\example\university\lab3" />
+      <recent name="F:\sos\sherstnov-dutjava-labs\src\test\java\org\example\university\lab2" />
+      <recent name="F:\sos\sherstnov-dutjava-labs\src\test\java\org\example\university\lab1" />
+      <recent name="F:\sos\sherstnov-dutjava-labs\src\main\java\org\example\university\lab2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\sos\sherstnov-dutjava-labs" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MainTest">
-    <configuration name="org.example.university.lab1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.university.lab1.Main" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.university.lab3.Main" />
       <module name="sherstnov-dutjava-labs" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.university.lab1.*" />
+          <option name="PATTERN" value="org.example.university.lab3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.MainTest" />
         <item itemvalue="Application.org.example.university.lab4_1.Main" />
         <item itemvalue="JUnit.BookTest (1)" />
         <item itemvalue="JUnit.LibraryTest (1)" />
-        <item itemvalue="Application.org.example.university.lab1.Main" />
       </list>
     </recent_temporary>
   </component>
