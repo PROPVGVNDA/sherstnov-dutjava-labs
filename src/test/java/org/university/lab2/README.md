@@ -1,4 +1,4 @@
-# Unit тести до [Лабораторна робота №2](../../../../../main/java/org/university/lab1/README.md)
+# Unit тести до [Лабораторна робота №2](../../../../../main/java/org/university/lab2/README.md)
 
 ### Опис тестів:
 

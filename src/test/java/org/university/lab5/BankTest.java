@@ -4,8 +4,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.university.lab5.Bank;
-import org.university.lab5.BankAccount;
 import org.university.lab5.exceptions.AccountNotFoundException;
 import org.university.lab5.exceptions.InsufficientFundsException;
 import org.university.lab5.exceptions.NegativeAmountException;
